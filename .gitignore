@@ -1,0 +1,40 @@
+# JetBrains / IntelliJ / PhpStorm / WebStorm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# Composer
+/vendor/
+
+# Node.js
+/node_modules/
+
+# Pliki środowiskowe i dane poufne
+.env
+.env.*
+!.env.example
+
+# Logi i pliki tymczasowe
+*.log
+*.tmp
+*.temp
+*.cache
+*.bak
+*~
+.cache/
+
+# System Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+# Katalogi wynikowe — zostaw tylko wtedy, gdy są generowane automatycznie
+/build/
+/dist/

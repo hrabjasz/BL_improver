@@ -1,0 +1,109 @@
+.product-amount {
+    background-color: #000000;
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    border-radius: 100%;
+    cursor: pointer;"
+}
+
+.product-amount-big {
+     background-color: #000000;
+     border: none;
+     font-weight: bold;
+     color: white;
+     padding: 16px 16px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 58px;
+     margin: 10px 8px;
+     border-radius: 50%;
+     cursor: pointer;
+     animation: wiggle 1s linear infinite;
+
+ }
+
+/* Keyframes */
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-19deg);
+    }
+    20% {
+        transform: rotateZ(15deg);
+    }
+    25% {
+        transform: rotateZ(-15deg);
+    }
+    30% {
+        transform: rotateZ(9deg);
+    }
+    35% {
+        transform: rotateZ(-6deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+.amount2 {
+    background-color: #0adf1b;
+}
+.amount3 {
+    background-color: #097912;
+}
+.amount4 {
+    background-color: #49590d;
+}
+.amount5 {
+    background-color: #7a4109;
+}
+.amount6 {
+    background-color: #a02e06;
+}
+.amount7 {
+    background-color: #b01010;
+}
+.amount8 {
+    background-color: #ff0000;
+}
+.product-amount .amount9 {
+    background-color: #000000;
+}
+
+.product-to-delete{
+    background-color: red;
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;"
+}
+.product-sku {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+.modal-header {
+    background-color: #00A36C !important;
+}
+.client-comment {
+    color: red;
+    font-weight: bold;
+    animation: wiggle 1s linear infinite;
+}
