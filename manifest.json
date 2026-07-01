@@ -1,38 +1,37 @@
 {
   "manifest_version": 3,
-  "name": "GM Baselinker improver",
-  "description": "Ulepszenie Baselinkera",
-  "version": "1.1",
-  "icons": {
-    "128": "128.png"
-  },
+  "name": "GM BaseLinker Improver",
+  "description": "Ulepszenia interfejsu BaseLinker: alarm wielu sztuk oraz wyraźne ostrzeżenie o produktach ukrytych poniżej widocznej części listy.",
+  "version": "1.3.1",
   "icons": {
     "16": "images/logo16.png",
     "48": "images/logo48.png",
     "128": "images/logo128.png"
   },
-  "action": {
-
-  },
+  "action": {},
   "content_scripts": [
     {
       "matches": [
-        "https://panel.baselinker.com/orders.php",
-        "https://panel.baselinker.com/orders_returns.php" ],
-      "js": ["index.js"],
-      "css": ["product_amount_style.css"]
+        "https://panel.baselinker.com/*",
+        "https://panel-b.baselinker.com/*"
+      ],
+      "js": [
+        "index.js"
+      ],
+      "css": [
+        "product_amount_style.css"
+      ],
+      "run_at": "document_idle"
     }
   ],
   "background": {
     "service_worker": "background.js"
   },
   "permissions": [
-    "unlimitedStorage",
-    "notifications",
-    "alarms",
     "scripting"
   ],
   "host_permissions": [
-    "*://panel.baselinker.com/*"
+    "https://panel.baselinker.com/*",
+    "https://panel-b.baselinker.com/*"
   ]
 }
